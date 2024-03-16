@@ -1,0 +1,23 @@
+
+// sfunc Stands for Special Functions, these functions are prebuilt in the compiler, and start on special occasions
+// sfunc examples are: onStart(Happens on startup), mainLoop(is looped the whole time, basically a while True in python)
+
+
+sfunc onStart():
+
+    // print is normal like in python, but has some elements from c
+    // for example, to print out a variable, you need to specify it after the string, but when you want to actually use in in the string, you need to format it
+    // for example, print(f"Hello %1", .1=User)  this string prints out the User variable, %1 means the number of what variable should i use
+    // the whole format of the print string goes like this:
+    // print(f"string %1 %2", .1=str"IntVariable", .2=str"BoolVariable")
+    // f indicates that its a complicated print, this is optional, and wihout it, you cannot add things after the string
+    // "" indicates the string
+    // %1 and %2 indicate the first and second variable, called after the string using .number
+    //     you dont have to use numbers for the variable calling, because of this you can do something like:
+    //     print("%coolstring is %iscool", .coolstring="CoolStringVariable", .iscool=str"CoolBoolVariable")
+    //     if you want to use bool or int, you will first need to say if its a string or not
+    //     if you want the line to end with a line break, you need the print string to look like this:
+    //     print(f"Next line starts %endofstring", .endofstring=char"lineBreak")
+    //     the last variable is a special character called lineBreak, this character breakes the like and the next print string will start on a different line
+
+    print("Hello World!")
