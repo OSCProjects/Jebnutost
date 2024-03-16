@@ -1,0 +1,50 @@
+
+
+sfunc onStart():
+    var bool TrueOrFalse = None
+
+    if TrueOrFalse == True:
+        print("True")
+    elif TrueOrFalse == Null/None:
+        print("None/Null")
+    else:
+        print("False)"
+
+    var str HelloWorld = "Hello World!"
+
+    if HelloWorld == "Hello World!":
+        print(f"%1", .1=HelloWorld)
+    elif HelloWorld == "Hello World."/"Hello World?":
+        print(f"Hello World. or Hello World? is the syntax")
+    elif HelloWorld == "Hello World." or HelloWorld == "Hello World?":
+        print(f"Hello World. or Hello World? is the syntax")
+    elif HelloWorld == "Hello World!" and TrueOrFalse == True:
+        print(f"Hello World! is the syntax and TrueOrFalse is True")
+
+
+    var int var1 = 5
+    var int var2 = 5
+
+    if math(f"%1 + %2 = X", .1="var1" .2="var2"):
+        print(f"var1 + var2 = %x", .x="X")
+    elif math(f"%1 + 5 = X", .1="var1"):
+        print(f"var1 + 5 = %x", .x="X")
+
+    // X can only be mentioned when used inside an If, Elif, Else, While and Func, other then that, it will not work
+
+    elif math(f"%1 + %2 > 9", .1="var1" .2="var2"):
+        print(f"var1 + var2 equal to more then 9")
+    elif math(f"%1 + %2 < 11", .1="var1" .2="var2"):
+        print(f"var1 + var2 equal to less then 11")
+    elif math(f"%1 + %2 >= 10", .1="var1" .2="var2"):
+        print(f"var1 + var2 equals to 10 or more")
+    elif math(f"%1 + %2 <= 12", .1="var1" .2="var2"):
+        print(f"var1 + var2 equals to 12 or less")
+    elif math(f"%1 + %2 = 10", .1="var1" .2="var2")/math(f"%1 - %2 = 0", .1="var1" .2="var2"):
+        print("var1 + var2 = 10 OR var1 - var2 = 0")
+    elif math(f"%1 * %2 = 25", .1="var1" .2="var2")+math(f"%1 / %2 = 1", .1="var1" .2="var2"):
+        print("var1 * var2 = 25 AND var1 / var2 = 1")
+    elif math(f"%1 + %2 != 11", .1="var1" .2="var2")/math(f"%1 - %2 != 0", .1="var1" .2="var2"):
+        print("var1 + var2 does not equal to 10 OR var1 - var2 does not equal to 0")
+    while math(f"%1 + %2 = X", .1="var1" .2="var2"):
+        print(f"var1 + var2 is still equal to 10")
